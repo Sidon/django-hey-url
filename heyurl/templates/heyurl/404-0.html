@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HeyURL!</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'heyurl/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'heyurl/style.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-sm-4">
+        <a class="navbar-brand" href="#">HeyURL!</a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 offset-sm2">
+                <div class="card mb-sm-4">
+                     <div class="card-header">
+                         404 - The Page can't be found
+                     </div>
+                     <div clas="card-body">
+                         <a href="/">Go TO Homepage</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
