@@ -10,7 +10,7 @@ def _create_random_key(max_length: int = 5) -> str:
 
 
 def get_user_agent(user_agent):
-    browser = user_agent.browser
+    browser = user_agent.browser.family
     if user_agent.is_mobile:
         platform = 'Mobile'
     elif user_agent.is_tablet:
