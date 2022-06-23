@@ -6,7 +6,6 @@ from .models import Url
 from .utils import db_services
 from .utils.cross_helper import get_user_agent
 
-
 def index(request):
     urls = Url.objects.order_by('-created_at')
     context = {'urls': urls}
@@ -14,22 +13,18 @@ def index(request):
 
 def store(request):
     # FIXME: Insert a new URL object into storage
-    if request.method != 'POST':
-        raise Http404
 
     inputed_original_url = request.POST.get('original_url')
-
-    if existing_url := db_services.check_original_url(inputed_original_url):
-       return HttpResponse(f'Original url already exists:<br>{existing_url}')
-
     validator = URLValidator()
     try:
         validator(inputed_original_url)
     except ValidationError:
         return HttpResponse(f'Invalid Url:<br>{inputed_original_url}')
-    breakpoint()
+
+    if existing_url := db_services.check_original_url(inputed_original_url):
+       return HttpResponse(f'Original url already exists:<br>{existing_url}')
+
     shortened_url = db_services.create_short_url(inputed_original_url)
-    breakpoint()
     return HttpResponse(f'Storing a new URL object into storage:<br>{shortened_url}')
 
 

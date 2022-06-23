@@ -1,21 +1,6 @@
-from collections import namedtuple
-from django.urls import reverse
 from heyurl.utils import cross_helper
+from tests.data_helper import DEFAULT_BROWSER, BrowserMock, BROWSER_MOCK, UserAgentMock
 
-
-DEFAULT_BROWSER = 'chrome'
-BrowserMock = namedtuple(
-    "BrowserMock",
-    "family",
-    defaults=[DEFAULT_BROWSER]
-)
-BROWSER_MOCK = BrowserMock()
-
-UserAgentMock = namedtuple(
-    "UserAgentMock",
-    ["browser", "is_mobile", "is_tablet", "is_pc"],
-    defaults = [BROWSER_MOCK , None, None, None]
-)
 
 def test_get_user_agent_browser():
     browser_mock = BrowserMock('Firefox')
@@ -26,17 +11,17 @@ def test_get_user_agent_browser():
 def test_get_user_agent_is_mobile():
     mock_user_agent = UserAgentMock(BROWSER_MOCK, True)
     browser, platform  =  cross_helper.get_user_agent(mock_user_agent)
-    assert browser==DEFAULT_BROWSER and platform=='Mobile'
+    assert browser == DEFAULT_BROWSER and platform == 'Mobile'
 
 def test_get_user_agent_is_tablet():
     mock_user_agent = UserAgentMock(BROWSER_MOCK, None, True, None)
     browser, platform  =  cross_helper.get_user_agent(mock_user_agent)
-    assert browser==DEFAULT_BROWSER and platform=='Tablet'
+    assert browser == DEFAULT_BROWSER and platform == 'Tablet'
 
 def test_get_user_agent_is_pc():
     mock_user_agent = UserAgentMock(BROWSER_MOCK, None, None, True)
     browser, platform  =  cross_helper.get_user_agent(mock_user_agent)
-    assert browser==DEFAULT_BROWSER and platform=='PC'
+    assert browser == DEFAULT_BROWSER and platform == 'PC'
 
 
 def test_create_random_key():
