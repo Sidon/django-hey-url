@@ -4,7 +4,6 @@ from heyurl import views
 from tests import data_helper
 from  heyurl.utils import db_services
 
-
 ORIGINAL_URL = 'https://www.fullstacklabs.co/projects/python'
 
 POSTMock = namedtuple(
@@ -35,4 +34,11 @@ def test_store_fail():
 @pytest.mark.django_db
 def test_short_url():
     assert views.store(RequestMock()).status_code==200
+
+@pytest.mark.django_db
+def test_handler404(monkeypatch):
+    request_mock = RequestMock()
+    monkeypatch.setattr('heyurl.views.render', lambda request, template: request_mock )
+    response = views.handler404(request_mock, None)
+    assert response==request_mock
 
