@@ -24,10 +24,16 @@ def test_check_original_url():
     url_checked = db_services.check_original_url("https://www.fullstacklabs.co")
     assert url_checked==url_created
 
-
 @pytest.mark.django_db
 def test_get_original_url():
     url_created  = db_services.create_short_url("https://www.fullstacklabs.co")
+    url_created_dict = json.loads(url_created)
+    url_got = db_services.get_original_url(url_created_dict['short_url'])
+    assert url_created_dict['short_url']==url_got.short_url
+
+@pytest.mark.django_db
+def test_get_metrics(short_url, year, month):
+    url_created = db_services.create_short_url("https://www.fullstacklabs.co")
     url_created_dict = json.loads(url_created)
     url_got = db_services.get_original_url(url_created_dict['short_url'])
     assert url_created_dict['short_url']==url_got.short_url

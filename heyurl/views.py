@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 from django.core.validators import URLValidator
 from django.core.exceptions import ValidationError
 from django.shortcuts import render, redirect
@@ -57,26 +58,39 @@ def handler404(request, exception):
 
 
 @json_view
-def month_metrics(request,short_url, year, month):
-    # f1 = models.Click.objects.filter(created_at__year=2022,created_at__month=6, url__short_url='a')
+def month_metrics(request):
+    valid_query = True
+    if short_url := request.GET.get('short_url', None):
+        if db_services.get_original_url(short_url):
+            today = datetime.today()
+            month = request.GET.get('month', today.month)
+            year = request.GET.get('year', today.year)
+        else:
+            valid_query = False
+    else:
+        valid_query = False
+
+    if not valid_query:
+        return render(request, 'heyurl/errors/404.html')
+
     clicks = db_services.get_metrics(short_url, year, month)
-    list_clicks = []
     day_metrics = dict()
-    for click in clicks:
-        breakpoint()
-        if not click.created_at.day in day_metrics:
-            day_metrics[click.created_at.day] = dict(browser=dict(), platform=dict())
-        if click.browser in day_metrics[click.created_at.day]['browser']:
-            day_metrics[click.created_at.day]['browser'][click.browser] += 1
-        else:
-            day_metrics[click.created_at.day]['browser'][click.browser] = 1
-        if click.platform in day_metrics[click.created_at.day]['platform']:
-            day_metrics[click.created_at.day]['platform'][click.platform] += 1
-        else:
-            day_metrics[click.created_at.day]['platform'][click.platform] = 1
+    breakpoint()
+    if clicks:
+        for click in clicks:
+            if not click.created_at.day in day_metrics:
+                day_metrics[click.created_at.day] = dict(browser=dict(), platform=dict())
+            if click.browser in day_metrics[click.created_at.day]['browser']:
+                day_metrics[click.created_at.day]['browser'][click.browser] += 1
+            else:
+                day_metrics[click.created_at.day]['browser'][click.browser] = 1
+            if click.platform in day_metrics[click.created_at.day]['platform']:
+                day_metrics[click.created_at.day]['platform'][click.platform] += 1
+            else:
+                day_metrics[click.created_at.day]['platform'][click.platform] = 1
     metrics = dict(
         short_url=short_url,
-        original_url=clicks[0].url.original_url,
+        original_url=db_services.get_original_url(short_url).original_url,
         year=year,
         month=month,
         metrics=day_metrics
