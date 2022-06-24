@@ -1,7 +1,9 @@
+import json
 from django.core.validators import URLValidator
 from django.core.exceptions import ValidationError
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from jsonview.decorators import json_view
 from .models import Url
 from .utils import db_services
 from .utils.cross_helper import get_user_agent
@@ -52,3 +54,31 @@ def handler404(request, exception):
         # return render(request, 'heyurl/404-0.html')
 
     return redirect(target_url)
+
+
+@json_view
+def month_metrics(request,short_url, year, month):
+    # f1 = models.Click.objects.filter(created_at__year=2022,created_at__month=6, url__short_url='a')
+    clicks = db_services.get_metrics(short_url, year, month)
+    list_clicks = []
+    day_metrics = dict()
+    for click in clicks:
+        breakpoint()
+        if not click.created_at.day in day_metrics:
+            day_metrics[click.created_at.day] = dict(browser=dict(), platform=dict())
+        if click.browser in day_metrics[click.created_at.day]['browser']:
+            day_metrics[click.created_at.day]['browser'][click.browser] += 1
+        else:
+            day_metrics[click.created_at.day]['browser'][click.browser] = 1
+        if click.platform in day_metrics[click.created_at.day]['platform']:
+            day_metrics[click.created_at.day]['platform'][click.platform] += 1
+        else:
+            day_metrics[click.created_at.day]['platform'][click.platform] = 1
+    metrics = dict(
+        short_url=short_url,
+        original_url=clicks[0].url.original_url,
+        year=year,
+        month=month,
+        metrics=day_metrics
+    )
+    return metrics

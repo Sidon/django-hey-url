@@ -36,3 +36,12 @@ def check_original_url(inputed_original_url):
 
 def get_original_url(short_url):
     return models.Url.objects.filter(short_url=short_url).first()
+
+
+def get_metrics(short_url, year, month):
+    clicks = models.Click.objects.filter(
+        created_at__year=year,
+        created_at__month=month,
+        url__short_url=short_url
+    )
+    return clicks

@@ -9,4 +9,5 @@ python-memcached==1.59
 pytest==7.1.2
 pytest-django==4.5.2
 pytest-mock-resources==2.4.0
+django-jsonview==2.0.0
 
