@@ -9,7 +9,7 @@ class Url(models.Model):
 
 
 class Click(models.Model):
-    url = models.ForeignKey(Url, on_delete=models.CASCADE)
+    url = models.ForeignKey(Url, on_delete=models.CASCADE, related_name = 'metrics')
     browser = models.CharField(max_length=255)
     platform = models.CharField(max_length=255)
     created_at = models.DateTimeField('date created', auto_now_add=True)

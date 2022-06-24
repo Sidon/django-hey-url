@@ -1,10 +1,10 @@
 import json
 from datetime import datetime
+from jsonview.decorators import json_view
 from django.core.validators import URLValidator
 from django.core.exceptions import ValidationError
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from jsonview.decorators import json_view
 from .models import Url
 from .utils import db_services
 from .utils.cross_helper import get_user_agent
@@ -75,7 +75,6 @@ def month_metrics(request):
 
     clicks = db_services.get_metrics(short_url, year, month)
     day_metrics = dict()
-    breakpoint()
     if clicks:
         for click in clicks:
             if not click.created_at.day in day_metrics:
@@ -93,6 +92,10 @@ def month_metrics(request):
         original_url=db_services.get_original_url(short_url).original_url,
         year=year,
         month=month,
-        metrics=day_metrics
+        data=[day_metrics]
     )
     return metrics
+
+@json_view
+def top_ten(request):
+    return db_services.get_top_n()

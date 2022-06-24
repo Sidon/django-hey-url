@@ -1,5 +1,6 @@
 import json
 import secrets
+from collections import Counter
 from django.forms.models import model_to_dict  # https://stackoverflow.com/a/29088221
 from . import cross_helper
 from heyurl import models
@@ -45,3 +46,43 @@ def get_metrics(short_url, year, month):
         url__short_url=short_url
     )
     return clicks
+
+
+
+def _get_top_n_metrics(clicks):
+    cnt_browser = Counter()
+
+    for browser in  [browser for browser in [n.browser for n in clicks]]:
+        cnt_browser[browser] += 1
+
+    cnt_platform = Counter()
+    for platform in  [browser for browser in [n.browser for n in clicks]]:
+        cnt_platform[platform] += 1
+
+    metrics = dict(
+        browsers=dict(cnt_browser),
+        platforms=dict(cnt_platform)
+    )
+    return metrics
+
+def get_top_n(n=10):
+    top_n = models.Url.objects.all().order_by('-clicks')[:n]
+    data = []
+    for n in top_n:
+        data.append(
+            dict(
+                type = "urls",
+                id = n.id,
+                atributes = {
+                    'created-at' : n.created_at,
+                    'original-url' : n.original_url,
+                    'url': n.short_url,
+                    'clicks': n.clicks
+                },
+                relationships = {
+                    "metrics": _get_top_n_metrics(n.metrics.all())
+                }
+            )
+        )
+    breakpoint()
+    return data

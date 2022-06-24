@@ -18,9 +18,7 @@ from django.urls import include, path
 urlpatterns = [
     path('', include('heyurl.routes.web')),
     path('u/<short_url>/', include('heyurl.routes.short_url')),
-    path('metrics/month/', include('heyurl.routes.api_url')),
-
-    # handler404 = 'mysite.views.my_custom_page_not_found_view'
+    path('metrics/',include('heyurl.routes.metrics_url')),
 ]
 
 handler404 = 'heyurl.views.handler404'
