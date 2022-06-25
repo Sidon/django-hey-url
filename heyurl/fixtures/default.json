@@ -1,35 +1,1839 @@
 [
-  {
-    "model": "heyurl.url",
-    "pk": 1,
-    "fields": {
-      "short_url": "a",
-      "original_url": "http://fullstacklabs.com",
-      "clicks": 1000000,
-      "created_at": "2018-10-26T01:48:35Z",
-      "updated_at": "2018-10-26T01:48:35Z"
-    }
-  },
-  {
-    "model": "heyurl.url",
-    "pk": 2,
-    "fields": {
-      "short_url": "b",
-      "original_url": "http://google.com",
-      "clicks": 5000000,
-      "created_at": "2018-10-26T03:28:13.525Z",
-      "updated_at": "2018-10-26T03:28:13.525Z"
-    }
-  },
-  {
-    "model": "heyurl.url",
-    "pk": 3,
-    "fields": {
-      "short_url": "c",
-      "original_url": "http://bing.com",
-      "clicks": 1,
-      "created_at": "2018-10-26T03:28:28.730Z",
-      "updated_at": "2018-10-26T03:28:28.730Z"
-    }
-  }
+	{
+		"model":"heyurl.url",
+		"pk" : 1,
+		"fields": {
+		"short_url" :  "a",
+		"original_url" : "http://fullstacklabs.co",
+		"clicks" : 30,
+		"created_at" : "2018-10-26 01:48:35",
+		"updated_at" : "2022-06-25 13:47:28.932179"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 2,
+		"fields": {
+		"short_url" :  "b",
+		"original_url" : "http://google.com",
+		"clicks" : 4,
+		"created_at" : "2018-10-26 03:28:13.525000",
+		"updated_at" : "2022-06-22 17:48:55.378232"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 3,
+		"fields": {
+		"short_url" :  "c",
+		"original_url" : "http://bing.com",
+		"clicks" : 5,
+		"created_at" : "2018-10-26 03:28:28.730000",
+		"updated_at" : "2022-06-22 17:59:07.559548"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 4,
+		"fields": {
+		"short_url" :  "st",
+		"original_url" : "https://www.uol.com.br/",
+		"clicks" : 3,
+		"created_at" : "2022-06-21 16:28:38.045125",
+		"updated_at" : "2022-06-22 16:39:37.540718"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 13,
+		"fields": {
+		"short_url" :  "n14i",
+		"original_url" : "http://www.lucidity.com/",
+		"clicks" : 6,
+		"created_at" : "2022-06-22 12:04:59.972353",
+		"updated_at" : "2022-06-23 17:21:09.867578"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 14,
+		"fields": {
+		"short_url" :  "sdn",
+		"original_url" : "https://www.nasa.gov/",
+		"clicks" : 8,
+		"created_at" : "2022-06-22 20:57:32.226156",
+		"updated_at" : "2022-06-25 13:40:58.009565"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 15,
+		"fields": {
+		"short_url" :  "VK",
+		"original_url" : "https://www.linkedin.com/",
+		"clicks" : 0,
+		"created_at" : "2022-06-23 17:46:19.312808",
+		"updated_at" : "2022-06-23 17:46:19.312852"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 16,
+		"fields": {
+		"short_url" :  "lg",
+		"original_url" : "https://linux.slashdot.org/",
+		"clicks" : 6,
+		"created_at" : "2022-06-25 12:07:35.167655",
+		"updated_at" : "2022-06-25 13:43:20.881839"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 17,
+		"fields": {
+		"short_url" :  "JuxH",
+		"original_url" : "https://www.linuxtoday.com/",
+		"clicks" : 3,
+		"created_at" : "2022-06-25 12:08:28.481875",
+		"updated_at" : "2022-06-25 13:24:36.225578"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 18,
+		"fields": {
+		"short_url" :  "5",
+		"original_url" : "https://www.linuxjournal.com/",
+		"clicks" : 6,
+		"created_at" : "2022-06-25 12:31:26.275764",
+		"updated_at" : "2022-06-25 13:32:57.858539"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 19,
+		"fields": {
+		"short_url" :  "B5qzb",
+		"original_url" : "https://www.linuxinsider.com/",
+		"clicks" : 3,
+		"created_at" : "2022-06-25 12:35:37.374784",
+		"updated_at" : "2022-06-25 13:25:53.734234"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 20,
+		"fields": {
+		"short_url" :  "Diwc",
+		"original_url" : "https://www.python.org",
+		"clicks" : 5,
+		"created_at" : "2022-06-25 12:41:45.684405",
+		"updated_at" : "2022-06-25 13:27:32.170872"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 21,
+		"fields": {
+		"short_url" :  "vDX",
+		"original_url" : "https://realpython.com",
+		"clicks" : 14,
+		"created_at" : "2022-06-25 12:43:37.508731",
+		"updated_at" : "2022-06-25 13:48:17.091599"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 22,
+		"fields": {
+		"short_url" :  "7at",
+		"original_url" : "https://yasoob.me",
+		"clicks" : 1,
+		"created_at" : "2022-06-25 12:46:40.722277",
+		"updated_at" : "2022-06-25 13:30:26.961209"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 23,
+		"fields": {
+		"short_url" :  "Q8",
+		"original_url" : "https://blog.finxter.com",
+		"clicks" : 2,
+		"created_at" : "2022-06-25 12:56:52.822116",
+		"updated_at" : "2022-06-25 13:29:44.606833"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 24,
+		"fields": {
+		"short_url" :  "OFVpZ",
+		"original_url" : "http://www.golangbootcamp.com/book/",
+		"clicks" : 3,
+		"created_at" : "2022-06-25 13:00:53.267997",
+		"updated_at" : "2022-06-25 13:40:31.015588"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 25,
+		"fields": {
+		"short_url" :  "7FK",
+		"original_url" : "https://go.dev",
+		"clicks" : 8,
+		"created_at" : "2022-06-25 13:12:55.173922",
+		"updated_at" : "2022-06-25 13:47:54.412752"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 26,
+		"fields": {
+		"short_url" :  "nhcwO",
+		"original_url" : "https://www.coursera.org/specializations/google-golang",
+		"clicks" : 7,
+		"created_at" : "2022-06-25 13:17:35.835840",
+		"updated_at" : "2022-06-25 13:41:31.429113"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 27,
+		"fields": {
+		"short_url" :  "g",
+		"original_url" : "https://www.codecademy.com/learn/learn-go",
+		"clicks" : 1,
+		"created_at" : "2022-06-25 13:19:51.916704",
+		"updated_at" : "2022-06-25 13:23:08.556311"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 28,
+		"fields": {
+		"short_url" :  "KC9v",
+		"original_url" : "https://www.educative.io/courses/introduction-to-programming-in-go",
+		"clicks" : 5,
+		"created_at" : "2022-06-25 13:21:35.673987",
+		"updated_at" : "2022-06-25 13:29:25.741272"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 29,
+		"fields": {
+		"short_url" :  "JsKz",
+		"original_url" : "https://fastapi.tiangolo.com",
+		"clicks" : 9,
+		"created_at" : "2022-06-25 13:28:22.263747",
+		"updated_at" : "2022-06-25 13:42:17.145358"
+		}
+	},
+	{
+		"model":"heyurl.url",
+		"pk" : 30,
+		"fields": {
+		"short_url" :  "2h8",
+		"original_url" : "https://www.theregister.com",
+		"clicks" : 16,
+		"created_at" : "2022-06-25 13:35:27.180458",
+		"updated_at" : "2022-06-25 13:42:10.132128"
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 6,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-21 12:20:27.200174",
+		"updated_at" : "2022-06-22 12:20:27.200209",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 9,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "Tablet",
+		"created_at" : "2022-06-21 13:01:59.727328",
+		"updated_at" : "2022-06-22 13:01:59.727365",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 10,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "Mobile",
+		"created_at" : "2022-06-22 13:03:45.090069",
+		"updated_at" : "2022-06-22 13:03:45.090105",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 11,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 14:21:49.979892",
+		"updated_at" : "2022-06-22 14:21:49.979930",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 12,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 16:16:44.081684",
+		"updated_at" : "2022-06-22 16:16:44.081819",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 14,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "Mobile",
+		"created_at" : "2022-06-22 16:41:12.730086",
+		"updated_at" : "2022-06-22 16:41:12.730143",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 15,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 16:41:44.952920",
+		"updated_at" : "2022-06-22 16:41:44.952953",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 17,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "Tablet",
+		"created_at" : "2022-06-22 16:56:59.547082",
+		"updated_at" : "2022-06-22 16:56:59.547121",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 18,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 16:57:17.439193",
+		"updated_at" : "2022-06-22 16:57:17.439244",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 23,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "Tablet",
+		"created_at" : "2022-06-22 17:49:15.964250",
+		"updated_at" : "2022-06-22 17:49:15.964285",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 27,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 23:38:33.700278",
+		"updated_at" : "2022-06-22 23:38:33.700316",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 28,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 23:39:13.066235",
+		"updated_at" : "2022-06-22 23:39:13.066269",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 29,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-23 00:23:07.730761",
+		"updated_at" : "2022-06-23 00:23:07.730804",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 32,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "Tablet",
+		"created_at" : "2022-06-24 18:01:51.867091",
+		"updated_at" : "2022-06-24 18:01:51.867128",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 57,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:26:09.160871",
+		"updated_at" : "2022-06-25 13:26:09.160905",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 58,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:26:15.176300",
+		"updated_at" : "2022-06-25 13:26:15.176334",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 59,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:26:18.877682",
+		"updated_at" : "2022-06-25 13:26:18.877715",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 60,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "Mobile",
+		"created_at" : "2022-06-25 13:26:22.635031",
+		"updated_at" : "2022-06-25 13:26:22.635094",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 61,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:26:31.085459",
+		"updated_at" : "2022-06-25 13:26:31.085497",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 62,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:26:36.768445",
+		"updated_at" : "2022-06-25 13:26:36.768478",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 63,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:26:41.022409",
+		"updated_at" : "2022-06-25 13:26:41.022443",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 108,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "Mobile",
+		"created_at" : "2022-06-25 13:39:40.455982",
+		"updated_at" : "2022-06-25 13:39:40.456016",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 109,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:39:46.999197",
+		"updated_at" : "2022-06-25 13:39:46.999237",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 110,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:39:52.947660",
+		"updated_at" : "2022-06-25 13:39:52.947701",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 111,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:39:56.828072",
+		"updated_at" : "2022-06-25 13:39:56.828119",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 130,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:42:29.838384",
+		"updated_at" : "2022-06-25 13:42:29.838425",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 131,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:42:38.342655",
+		"updated_at" : "2022-06-25 13:42:38.342704",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 132,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:42:43.672281",
+		"updated_at" : "2022-06-25 13:42:43.672324",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 138,
+		"fields": {
+		"browser" : "Electron",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:47:21.799199",
+		"updated_at" : "2022-06-25 13:47:21.799232",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 139,
+		"fields": {
+		"browser" : "Electron",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:47:28.928911",
+		"updated_at" : "2022-06-25 13:47:28.928952",
+		"url_id" : 1
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 5,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 12:20:17.546427",
+		"updated_at" : "2022-06-22 12:20:17.546465",
+		"url_id" : 2
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 19,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 17:45:05.860539",
+		"updated_at" : "2022-06-22 17:45:05.860574",
+		"url_id" : 2
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 21,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 17:48:48.672151",
+		"updated_at" : "2022-06-22 17:48:48.672236",
+		"url_id" : 2
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 22,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 17:48:55.374545",
+		"updated_at" : "2022-06-22 17:48:55.374603",
+		"url_id" : 2
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 7,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 12:31:41.142681",
+		"updated_at" : "2022-06-22 12:31:41.142717",
+		"url_id" : 3
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 16,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 16:42:54.026619",
+		"updated_at" : "2022-06-22 16:42:54.026671",
+		"url_id" : 3
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 20,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 17:45:18.936381",
+		"updated_at" : "2022-06-22 17:45:18.936413",
+		"url_id" : 3
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 24,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 17:52:16.972059",
+		"updated_at" : "2022-06-22 17:52:16.972101",
+		"url_id" : 3
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 26,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 17:59:07.556679",
+		"updated_at" : "2022-06-22 17:59:07.556712",
+		"url_id" : 3
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 1,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-21 21:44:32.618471",
+		"updated_at" : "2022-06-21 21:44:32.618505",
+		"url_id" : 4
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 4,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 12:20:06.481083",
+		"updated_at" : "2022-06-22 12:20:06.481122",
+		"url_id" : 4
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 13,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 16:39:37.534514",
+		"updated_at" : "2022-06-22 16:39:37.534553",
+		"url_id" : 4
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 2,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 12:06:47.942423",
+		"updated_at" : "2022-06-22 12:06:47.942461",
+		"url_id" : 13
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 3,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 12:09:15.286686",
+		"updated_at" : "2022-06-22 12:09:15.286735",
+		"url_id" : 13
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 8,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 12:32:01.421522",
+		"updated_at" : "2022-06-22 12:32:01.421561",
+		"url_id" : 13
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 25,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-22 17:58:58.675669",
+		"updated_at" : "2022-06-22 17:58:58.675749",
+		"url_id" : 13
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 30,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-23 17:16:54.658494",
+		"updated_at" : "2022-06-23 17:16:54.658530",
+		"url_id" : 13
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 31,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-23 17:21:09.863462",
+		"updated_at" : "2022-06-23 17:21:09.863495",
+		"url_id" : 13
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 39,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:29.694731",
+		"updated_at" : "2022-06-25 13:23:29.694765",
+		"url_id" : 14
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 40,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:38.401125",
+		"updated_at" : "2022-06-25 13:23:38.401159",
+		"url_id" : 14
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 41,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:43.145899",
+		"updated_at" : "2022-06-25 13:23:43.145933",
+		"url_id" : 14
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 42,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:46.647386",
+		"updated_at" : "2022-06-25 13:23:46.647421",
+		"url_id" : 14
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 43,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:50.846473",
+		"updated_at" : "2022-06-25 13:23:50.846508",
+		"url_id" : 14
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 120,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:43.948262",
+		"updated_at" : "2022-06-25 13:40:43.948313",
+		"url_id" : 14
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 121,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:49.582732",
+		"updated_at" : "2022-06-25 13:40:49.582764",
+		"url_id" : 14
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 122,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:58.006503",
+		"updated_at" : "2022-06-25 13:40:58.006539",
+		"url_id" : 14
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 119,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:34.844523",
+		"updated_at" : "2022-06-25 13:40:34.844566",
+		"url_id" : 16
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 133,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:43:02.296547",
+		"updated_at" : "2022-06-25 13:43:02.296583",
+		"url_id" : 16
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 134,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:43:07.668830",
+		"updated_at" : "2022-06-25 13:43:07.668865",
+		"url_id" : 16
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 135,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:43:13.401026",
+		"updated_at" : "2022-06-25 13:43:13.401067",
+		"url_id" : 16
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 136,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:43:16.786017",
+		"updated_at" : "2022-06-25 13:43:16.786051",
+		"url_id" : 16
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 137,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:43:20.877666",
+		"updated_at" : "2022-06-25 13:43:20.877700",
+		"url_id" : 16
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 44,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:58.105484",
+		"updated_at" : "2022-06-25 13:23:58.105570",
+		"url_id" : 17
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 45,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:24:06.606044",
+		"updated_at" : "2022-06-25 13:24:06.606087",
+		"url_id" : 17
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 47,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:24:36.221316",
+		"updated_at" : "2022-06-25 13:24:36.221347",
+		"url_id" : 17
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 89,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:32:12.882718",
+		"updated_at" : "2022-06-25 13:32:12.882748",
+		"url_id" : 18
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 90,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:32:34.550593",
+		"updated_at" : "2022-06-25 13:32:34.550626",
+		"url_id" : 18
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 91,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:32:38.943245",
+		"updated_at" : "2022-06-25 13:32:38.943277",
+		"url_id" : 18
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 92,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:32:43.267010",
+		"updated_at" : "2022-06-25 13:32:43.267060",
+		"url_id" : 18
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 93,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:32:47.097619",
+		"updated_at" : "2022-06-25 13:32:47.097654",
+		"url_id" : 18
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 94,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:32:57.855778",
+		"updated_at" : "2022-06-25 13:32:57.855811",
+		"url_id" : 18
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 46,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:24:13.742587",
+		"updated_at" : "2022-06-25 13:24:13.742620",
+		"url_id" : 19
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 48,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:24:45.170621",
+		"updated_at" : "2022-06-25 13:24:45.170654",
+		"url_id" : 19
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 56,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:25:53.731663",
+		"updated_at" : "2022-06-25 13:25:53.731698",
+		"url_id" : 19
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 49,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:25:03.075166",
+		"updated_at" : "2022-06-25 13:25:03.075202",
+		"url_id" : 20
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 51,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:25:15.696135",
+		"updated_at" : "2022-06-25 13:25:15.696168",
+		"url_id" : 20
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 55,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:25:47.047864",
+		"updated_at" : "2022-06-25 13:25:47.047902",
+		"url_id" : 20
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 66,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:27:17.466791",
+		"updated_at" : "2022-06-25 13:27:17.466870",
+		"url_id" : 20
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 68,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:27:32.168166",
+		"updated_at" : "2022-06-25 13:27:32.168202",
+		"url_id" : 20
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 50,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:25:08.896381",
+		"updated_at" : "2022-06-25 13:25:08.896416",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 52,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:25:25.558611",
+		"updated_at" : "2022-06-25 13:25:25.558643",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 53,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:25:31.126835",
+		"updated_at" : "2022-06-25 13:25:31.126873",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 54,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:25:36.084429",
+		"updated_at" : "2022-06-25 13:25:36.084464",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 64,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:27:06.900440",
+		"updated_at" : "2022-06-25 13:27:06.900474",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 65,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:27:12.756787",
+		"updated_at" : "2022-06-25 13:27:12.756831",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 67,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:27:24.184060",
+		"updated_at" : "2022-06-25 13:27:24.184095",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 69,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:27:38.267303",
+		"updated_at" : "2022-06-25 13:27:38.267335",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 70,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:27:49.216025",
+		"updated_at" : "2022-06-25 13:27:49.216087",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 112,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:02.976958",
+		"updated_at" : "2022-06-25 13:40:02.976995",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 113,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:11.121388",
+		"updated_at" : "2022-06-25 13:40:11.121427",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 143,
+		"fields": {
+		"browser" : "Electron",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:48:02.206161",
+		"updated_at" : "2022-06-25 13:48:02.206194",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 144,
+		"fields": {
+		"browser" : "Electron",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:48:10.671387",
+		"updated_at" : "2022-06-25 13:48:10.671441",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 145,
+		"fields": {
+		"browser" : "Electron",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:48:17.087462",
+		"updated_at" : "2022-06-25 13:48:17.087525",
+		"url_id" : 21
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 88,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:30:26.958905",
+		"updated_at" : "2022-06-25 13:30:26.958940",
+		"url_id" : 22
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 38,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:20.585374",
+		"updated_at" : "2022-06-25 13:23:20.585412",
+		"url_id" : 23
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 83,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:29:44.603469",
+		"updated_at" : "2022-06-25 13:29:44.603503",
+		"url_id" : 23
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 115,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:21.315071",
+		"updated_at" : "2022-06-25 13:40:21.315106",
+		"url_id" : 24
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 116,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:24.981909",
+		"updated_at" : "2022-06-25 13:40:24.981946",
+		"url_id" : 24
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 118,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:31.012513",
+		"updated_at" : "2022-06-25 13:40:31.012548",
+		"url_id" : 24
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 84,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:29:51.845772",
+		"updated_at" : "2022-06-25 13:29:51.845805",
+		"url_id" : 25
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 85,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "Tablet",
+		"created_at" : "2022-06-25 13:29:57.179570",
+		"updated_at" : "2022-06-25 13:29:57.179602",
+		"url_id" : 25
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 86,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:30:02.110227",
+		"updated_at" : "2022-06-25 13:30:02.110259",
+		"url_id" : 25
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 87,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:30:16.383701",
+		"updated_at" : "2022-06-25 13:30:16.383737",
+		"url_id" : 25
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 114,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:14.995839",
+		"updated_at" : "2022-06-25 13:40:14.995874",
+		"url_id" : 25
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 140,
+		"fields": {
+		"browser" : "Electron",
+		"platform" : "Tablet",
+		"created_at" : "2022-06-25 13:47:41.193273",
+		"updated_at" : "2022-06-25 13:47:41.193304",
+		"url_id" : 25
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 141,
+		"fields": {
+		"browser" : "Electron",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:47:47.670047",
+		"updated_at" : "2022-06-25 13:47:47.670079",
+		"url_id" : 25
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 142,
+		"fields": {
+		"browser" : "Electron",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:47:54.409614",
+		"updated_at" : "2022-06-25 13:47:54.409867",
+		"url_id" : 25
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 35,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:02.743931",
+		"updated_at" : "2022-06-25 13:23:02.743964",
+		"url_id" : 26
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 37,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:16.261082",
+		"updated_at" : "2022-06-25 13:23:16.261120",
+		"url_id" : 26
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 81,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:29:36.006801",
+		"updated_at" : "2022-06-25 13:29:36.006834",
+		"url_id" : 26
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 82,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:29:40.190403",
+		"updated_at" : "2022-06-25 13:29:40.190436",
+		"url_id" : 26
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 117,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:40:27.717203",
+		"updated_at" : "2022-06-25 13:40:27.717241",
+		"url_id" : 26
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 123,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:41:23.610514",
+		"updated_at" : "2022-06-25 13:41:23.610569",
+		"url_id" : 26
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 124,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:41:31.426193",
+		"updated_at" : "2022-06-25 13:41:31.426322",
+		"url_id" : 26
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 36,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:23:08.553080",
+		"updated_at" : "2022-06-25 13:23:08.553119",
+		"url_id" : 27
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 33,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:22:46.072330",
+		"updated_at" : "2022-06-25 13:22:46.072367",
+		"url_id" : 28
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 34,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:22:53.484545",
+		"updated_at" : "2022-06-25 13:22:53.484575",
+		"url_id" : 28
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 78,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:29:12.506172",
+		"updated_at" : "2022-06-25 13:29:12.506202",
+		"url_id" : 28
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 79,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:29:17.333461",
+		"updated_at" : "2022-06-25 13:29:17.333513",
+		"url_id" : 28
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 80,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:29:25.737398",
+		"updated_at" : "2022-06-25 13:29:25.737455",
+		"url_id" : 28
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 71,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:28:34.539523",
+		"updated_at" : "2022-06-25 13:28:34.539559",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 72,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:28:39.565645",
+		"updated_at" : "2022-06-25 13:28:39.565678",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 73,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:28:43.380634",
+		"updated_at" : "2022-06-25 13:28:43.380664",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 74,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:28:46.599272",
+		"updated_at" : "2022-06-25 13:28:46.599319",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 75,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:28:49.955456",
+		"updated_at" : "2022-06-25 13:28:49.955493",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 76,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:28:53.749862",
+		"updated_at" : "2022-06-25 13:28:53.749893",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 77,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:28:57.348665",
+		"updated_at" : "2022-06-25 13:28:57.348700",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 128,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:42:13.322058",
+		"updated_at" : "2022-06-25 13:42:13.322095",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 129,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:42:16.801712",
+		"updated_at" : "2022-06-25 13:42:16.801749",
+		"url_id" : 29
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 95,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:35:34.995359",
+		"updated_at" : "2022-06-25 13:35:34.995391",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 96,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:35:40.068569",
+		"updated_at" : "2022-06-25 13:35:40.068611",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 97,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:35:43.461319",
+		"updated_at" : "2022-06-25 13:35:43.461369",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 98,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "Tablet",
+		"created_at" : "2022-06-25 13:35:46.352909",
+		"updated_at" : "2022-06-25 13:35:46.352964",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 99,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:35:49.187857",
+		"updated_at" : "2022-06-25 13:35:49.187889",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 100,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:35:52.693816",
+		"updated_at" : "2022-06-25 13:35:52.693851",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 101,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:35:55.274493",
+		"updated_at" : "2022-06-25 13:35:55.274524",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 102,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:35:57.795720",
+		"updated_at" : "2022-06-25 13:35:57.795753",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 103,
+		"fields": {
+		"browser" : "Chrome",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:36:00.275803",
+		"updated_at" : "2022-06-25 13:36:00.275835",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 104,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:39:13.235387",
+		"updated_at" : "2022-06-25 13:39:13.235418",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 105,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:39:19.039389",
+		"updated_at" : "2022-06-25 13:39:19.039421",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 106,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:39:23.803115",
+		"updated_at" : "2022-06-25 13:39:23.803148",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 107,
+		"fields": {
+		"browser" : "Firefox",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:39:34.927336",
+		"updated_at" : "2022-06-25 13:39:34.927370",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 125,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:42:03.767018",
+		"updated_at" : "2022-06-25 13:42:03.767068",
+		"url_id" : 30
+		}
+	},
+	{
+		"model":"heyurl.click",
+		"pk" : 126,
+		"fields": {
+		"browser" : "Opera",
+		"platform" : "PC",
+		"created_at" : "2022-06-25 13:42:07.569666",
+		"updated_at" : "2022-06-25 13:42:07.569702",
+		"url_id" : 30
+		}
+	},
+	{
+		"model": "heyurl.click",
+		"pk": 127,
+		"fields": {
+			"browser": "Opera",
+			"platform": "PC",
+			"created_at": "2022-06-25 13:42:10.128979",
+			"updated_at": "2022-06-25 13:42:10.129012",
+			"url_id": 30
+		}
+	}
 ]

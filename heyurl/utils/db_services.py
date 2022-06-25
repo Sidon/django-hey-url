@@ -56,7 +56,7 @@ def _get_top_n_metrics(clicks):
         cnt_browser[browser] += 1
 
     cnt_platform = Counter()
-    for platform in  [browser for browser in [n.browser for n in clicks]]:
+    for platform in  [platform for platform in [n.platform for n in clicks]]:
         cnt_platform[platform] += 1
 
     metrics = dict(
@@ -84,5 +84,4 @@ def get_top_n(n=10):
                 }
             )
         )
-    breakpoint()
-    return data
+    return dict(data=data)

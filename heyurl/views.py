@@ -9,6 +9,7 @@ from .models import Url
 from .utils import db_services
 from .utils.cross_helper import get_user_agent
 
+
 def index(request):
     urls = Url.objects.order_by('-created_at')
     context = {'urls': urls}
