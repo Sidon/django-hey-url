@@ -17,7 +17,7 @@ def index(request):
 
 def store(request):
     # FIXME: Insert a new URL object into storage
-
+     
     inputed_original_url = request.POST.get('original_url')
     validator = URLValidator()
     try:

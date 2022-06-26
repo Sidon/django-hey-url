@@ -2,43 +2,57 @@ from collections import namedtuple
 import pytest
 from heyurl import views
 from tests import data_helper
+from tests.data_helper import helper_tests
 from  heyurl.utils import db_services
-
-ORIGINAL_URL = 'https://www.fullstacklabs.co/projects/python'
-
-POSTMock = namedtuple(
-    "POSTMock",
-    "get",
-    defaults=[lambda orignal_url: ORIGINAL_URL]
-)
-
-POST_MOCK = POSTMock()
-INVALID_POST_MOCK = POSTMock(lambda original_url: 'inv4lid#url')
-
-RequestMock = namedtuple(
-    'RequestMock',
-    ['POST', 'user_agent', 'path', 'method'],
-    defaults=[POST_MOCK,data_helper.USER_AGENT_MOCK,'/a', 'POST']
-)
 
 @pytest.mark.django_db
 def test_store():
-    response = views.store(RequestMock())
+    mock_http_post = helper_tests.http_post(lambda orignal_url: helper_tests.inexistent_urls[0])
+    mock_request = helper_tests.http_request(
+        mock_http_post,
+        helper_tests.user_agent(),
+        None,
+        'POST'
+    ) 
+    response = views.store(mock_request)
     assert response.content.decode('ascii').split("<br>")[0]=='Storing a new URL object into storage:'
 
 @pytest.mark.django_db
 def test_store_fail():
-    response = views.store(RequestMock(INVALID_POST_MOCK))
+    mock_http_post = helper_tests.http_post(lambda orignal_url: helper_tests.invalid_url)
+    mock_request = helper_tests.http_request(
+        mock_http_post,
+        helper_tests.user_agent(),
+        None,
+        'POST'
+    ) 
+    response = views.store(mock_request)
+    
     assert response.content == b'Invalid Url:<br>inv4lid#url'
 
 @pytest.mark.django_db
 def test_short_url():
-    assert views.store(RequestMock()).status_code==200
+    assert views.store(helper_tests.http_request()).status_code==200
 
 @pytest.mark.django_db
 def test_handler404(monkeypatch):
-    request_mock = RequestMock()
-    monkeypatch.setattr('heyurl.views.render', lambda request, template: request_mock )
-    response = views.handler404(request_mock, None)
-    assert response==request_mock
+    monkeypatch.setattr('heyurl.views.render', lambda request, template:helper_tests.http_request() )
+    response = views.handler404(helper_tests.http_request(), None)
+    assert response.status_code==302
 
+@pytest.mark.django_db
+def test_month_metrics(django_db_setup):
+    metrics = views.month_metrics(helper_tests.http_request())
+    assert  metrics.status_code==200
+    
+
+@pytest.mark.django_db
+def test_top_ten(django_db_setup):
+    top_ten = views.top_ten(helper_tests.http_request())
+    assert top_ten.status_code==200
+    
+@pytest.mark.django_db
+def test_short_url(django_db_setup):
+    redirect = views.short_url(helper_tests.http_request(), helper_tests.fsl_short)
+    assert redirect.status_code==302
+    

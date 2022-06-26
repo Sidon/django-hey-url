@@ -1,27 +1,12 @@
 from heyurl.utils import cross_helper
-from tests.data_helper import DEFAULT_BROWSER, BrowserMock, BROWSER_MOCK, UserAgentMock
+from tests.data_helper import helper_tests
 
 
 def test_get_user_agent_browser():
-    browser_mock = BrowserMock('Firefox')
-    mock_user_agent = UserAgentMock(browser_mock)
+    firefox_mock = helper_tests.browser('firefox')
+    mock_user_agent = helper_tests.user_agent(firefox_mock, is_mobile=True)
     browser, platform  =  cross_helper.get_user_agent(mock_user_agent)
-    assert browser=='Firefox'
-
-def test_get_user_agent_is_mobile():
-    mock_user_agent = UserAgentMock(BROWSER_MOCK, True)
-    browser, platform  =  cross_helper.get_user_agent(mock_user_agent)
-    assert browser == DEFAULT_BROWSER and platform == 'Mobile'
-
-def test_get_user_agent_is_tablet():
-    mock_user_agent = UserAgentMock(BROWSER_MOCK, None, True, None)
-    browser, platform  =  cross_helper.get_user_agent(mock_user_agent)
-    assert browser == DEFAULT_BROWSER and platform == 'Tablet'
-
-def test_get_user_agent_is_pc():
-    mock_user_agent = UserAgentMock(BROWSER_MOCK, None, None, True)
-    browser, platform  =  cross_helper.get_user_agent(mock_user_agent)
-    assert browser == DEFAULT_BROWSER and platform == 'PC'
+    assert browser=='firefox' and platform=='Mobile'
 
 
 def test_create_random_key():

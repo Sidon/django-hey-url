@@ -3,7 +3,6 @@
 # Redesign and boilerplates for tree structure
 touch heyurl/routes/metrics_url.py
 
-
 mkdir -p heyurl/utils
 touch heyurl/utils/__init__.py
 touch heyurl/utils/cross_helper.py
@@ -11,7 +10,6 @@ touch heyurl/utils/db_services.py
 
 mkdir -p tests/utils
 touch tests/__init__.py
-touch tests/conftest.py
 touch tests/data_helper.py
 touch tests/test_views.py
 
@@ -27,9 +25,6 @@ source .fs_env/bin/activate
 cp ~/fsl/requirements.txt .
 pip install -r requirements.txt
 
-# minimal comon pytest config
-cp ~/fsl/pytest.ini .
-
 # Recreating database
 rm -rf db.sqlite3
 python manage.py makemigrations
@@ -37,4 +32,4 @@ python manage.py migrate
 
 # Fixtures
 cp ~/fsl/sdn_fixture.json heyurl/fixtures/
-python manage.py  loaddata sdn_fixture.json
+python python manage.py  loaddata sdn_fixture.json
