@@ -52,8 +52,8 @@ def short_url(request, short_url):
 def handler404(request, exception):
     short_url = [fragment for fragment in request.path.split('/') if fragment][-1]
     if not (target_url := _update_clicks(request, short_url)):
-        return render(request, 'heyurl/errors/404.html')
-        # return render(request, 'heyurl/404-0.html')
+        # return render(request, 'heyurl/errors/404.html')
+        return render(request, 'heyurl/404-0.html')
 
     return redirect(target_url)
 
@@ -72,7 +72,7 @@ def month_metrics(request):
         valid_query = False
 
     if not valid_query:
-        return render(request, 'heyurl/errors/404.html')
+        return render(request, 'heyurl/404-0.html')
 
     clicks = db_services.get_metrics(short_url, year, month)
     day_metrics = dict()
