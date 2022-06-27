@@ -20,7 +20,7 @@ touch tests/utils/test_cross_helper.py
 touch tests/utils/test_db_services.py
 
 # creating virtualenv
-python -m venv --upgrade-deps .fs_env
+python3 -m venv --upgrade-deps .fs_env
 source .fs_env/bin/activate
 
 # Install requirements
